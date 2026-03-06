@@ -1,0 +1,2008 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <p>Est 2021</p>
+  <title>Bough</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+  <div class="menu-icon-wrapper">
+    <div class="menu-icon" onclick="toggleCssMenu(this)">
+      <div class="three-line">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <div id="cssmenu">
+    <ul>
+        <li><a href="rules.html">Rules</a></li>
+      <li><a href="pastWinner.html">Past Winners</a></li>
+      <li><a href="standings.html">Standings</a></li>
+      <li><a href="makePicks.html">Submit Picks</a></li>
+      <li><a href="seeEveryonesPicks.html">See the Picks</a></li>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  </div>
+
+  <div id="myHeader">
+    Make Your Picks
+  </div>
+     <form name="submit-to-google-sheet" class = "my-form">
+    Name:
+    <select name="Name" placeholder="Name" id="select3">
+      <option value="---">---</option>
+      <option value="Corbin">Corbin</option>
+      <option value="Wallace">Wallace</option>
+      <option value="Pete">Pete</option>
+      <option value="Ryan S">Ryan S</option>
+      <option value="Jesse">Jesse</option>
+      <option value="Dad-LegacyPlayer">Dad-LegacyPlayer</option>
+      <option value="Jessica">Jessica</option>
+      <option value="Blake">Blake</option>
+      <option value="Mom-LegacyPlayer">Mom-LegacyPlayer</option>
+      <option value="Dids">Dids</option>
+      <option value="Lisa">Lisa</option>
+      <option value="Ryan P">Ryan P</option>
+      <option value="Carl">Carl</option>
+      <option value="Julie">Julie</option>
+      <option value="Cody">Cody</option>
+      <option value="Brady">Brady</option>
+      <option value="Brittany">Brittany</option>
+      <option value="Jared">Jared</option>
+      <option value="Tanner">Tanner</option>
+      <option value="Ian">Ian</option>
+       <option value="Buckinx">Buckinx</option>
+      <option value="Byron">Byron</option>
+      <option value="Elliot U">Elliot U</option>
+      <option value="Levi">Levi</option>
+      <option value="Tommy">Tommy</option>
+      <option value="Tanner">Tanner</option>
+      <option value="Kieran">Kieran</option>
+      <option value="Justin B">Justin B</option>
+      <option value="Sherwin">Sherwin</option>
+      
+    </select>
+    <br><br>
+
+       <div class = "event_card">
+          <div class = "event_logo">
+            <span>
+              <img src = "logos/seahawks.png">
+            </span>
+          </div>
+          <div class = "event_teamName">
+            SEA Seahawks
+          </div>
+          <div class = "event_logo">
+            <span>
+              <img src = "logos/pats.png">
+            </span>
+          </div>
+          <div class = "event_teamName">
+            NE Patriots
+          </div>
+           <br>
+          <div class = "event_dropDown">
+             <select name="gameOne" placeholder="gameOne" id="select2">
+                <option value="null">Select</option>
+               <option value="=Y1">Seahawks</option>
+              <option value="=AF1">Pats</option>
+              </select>
+              <select name="gameOneScore" placeholder="gameOneScore" id="select1">
+                <option value="null">Spread</option>
+               <option value="1">1</option>
+              <option value="2">2</option>
+                <option value="3">3</option>
+              <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+              </select>
+          </div>
+
+        </div>
+       <div class = "event_card">
+          <div class = "event_button">
+            <button type="submit">send</button>
+         </div>
+       </div>
+       <div class = "collapsible">Conference Championship 2026</div><br>
+       <div class = "pickTable">
+          <div class = "event_card">
+             <div class = "event_logo">
+               <span>
+                 <img src = "logos/pats.png">
+               </span>
+             </div>
+             <div class = "event_teamName">
+               NE Patriots
+             </div>
+             <div class = "event_logo">
+               <span>
+                 <img src = "logos/broncos.png">
+               </span>
+             </div>
+             <div class = "event_teamName">
+               DEN Broncos
+             </div>
+              <br>
+             <div class = "event_dropDown">
+                <select name="gameOne" placeholder="gameOne" id="select2">
+                   <option value="null">Select</option>
+                  <option value="=AF1">Pats</option>
+                 <option value="=R1">Broncos</option>
+                 </select>
+                 <select name="gameOneScore" placeholder="gameOneScore" id="select1">
+                   <option value="null">Spread</option>
+                  <option value="1">1</option>
+                 <option value="2">2</option>
+                   <option value="3">3</option>
+                 <option value="4">4</option>
+                   <option value="5">5</option>
+                   <option value="6">6</option>
+                   <option value="7">7</option>
+                   <option value="8">8</option>
+                   <option value="9">9</option>
+                   <option value="10">10</option>
+                   <option value="11">11</option>
+                   <option value="12">12</option>
+                   <option value="13">13</option>
+                   <option value="14">14</option>
+                   <option value="15">15</option>
+                   <option value="16">16</option>
+                   <option value="17">17</option>
+                   <option value="18">18</option>
+                   <option value="19">19</option>
+                   <option value="20">20</option>
+                   <option value="21">21</option>
+                   <option value="22">22</option>
+                   <option value="23">23</option>
+                   <option value="24">24</option>
+                   <option value="25">25</option>
+                   <option value="26">26</option>
+                   <option value="27">27</option>
+                   <option value="28">28</option>
+                   <option value="29">29</option>
+                   <option value="30">30</option>
+                 </select>
+             </div>
+
+           </div>
+            <div class = "event_card">
+              <div class = "event_logo">
+                <span>
+                  <img src = "logos/rams.png">
+                </span>
+              </div>
+              <div class = "event_teamName">
+                LA Rams
+              </div>
+              <div class = "event_logo">
+                <span>
+                  <img src = "logos/seahawks.png">
+                </span>
+              </div>
+              <div class = "event_teamName">
+                SEA Seahawks
+              </div>
+              <div class = "event_dropDown">
+                 <select name="gameTwo" placeholder="gameTwo" id="select2">
+                    <option value="null">pick one</option>
+                   <option value="=V1">Rams</option>
+                  <option value="=Y1">Seahawks</option>
+                  </select>
+                  <select name="gameTwoScore" placeholder="gameTwoScore" id="select1">
+                    <option value="null">Choose Spread</option>
+                   <option value="1">1</option>
+                  <option value="2">2</option>
+                    <option value="3">3</option>
+                  <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                  </select>
+              </div>
+
+            </div>
+         </div>
+             <div class = "collapsible">Divisional Round 2026</div><br>
+       <div class = "pickTable">
+       <div class = "event_card">
+          <div class = "event_logo">
+            <span>
+              <img src = "logos/bills.png">
+            </span>
+          </div>
+          <div class = "event_teamName">
+            BUF Bills
+          </div>
+          <div class = "event_logo">
+            <span>
+              <img src = "logos/broncos.png">
+            </span>
+          </div>
+          <div class = "event_teamName">
+            DEN Broncos
+          </div>
+           <br>
+          <div class = "event_dropDown">
+             <select name="gameOne" placeholder="gameOne" id="select2">
+                <option value="null">Select</option>
+               <option value="=S1">Bills</option>
+              <option value="=R1">Broncos</option>
+              </select>
+              <select name="gameOneScore" placeholder="gameOneScore" id="select1">
+                <option value="null">Spread</option>
+               <option value="1">1</option>
+              <option value="2">2</option>
+                <option value="3">3</option>
+              <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+              </select>
+          </div>
+
+        </div>
+         <div class = "event_card">
+           <div class = "event_logo">
+             <span>
+               <img src = "logos/niners.png">
+             </span>
+           </div>
+           <div class = "event_teamName">
+             SF 49ers
+           </div>
+           <div class = "event_logo">
+             <span>
+               <img src = "logos/seahawks.png">
+             </span>
+           </div>
+           <div class = "event_teamName">
+             SEA Seahawks
+           </div>
+           <div class = "event_dropDown">
+              <select name="gameTwo" placeholder="gameTwo" id="select2">
+                 <option value="null">pick one</option>
+                <option value="=AC1">49ers</option>
+               <option value="=Y1">Seahawks</option>
+               </select>
+               <select name="gameTwoScore" placeholder="gameTwoScore" id="select1">
+                 <option value="null">Choose Spread</option>
+                <option value="1">1</option>
+               <option value="2">2</option>
+                 <option value="3">3</option>
+               <option value="4">4</option>
+                 <option value="5">5</option>
+                 <option value="6">6</option>
+                 <option value="7">7</option>
+                 <option value="8">8</option>
+                 <option value="9">9</option>
+                 <option value="10">10</option>
+                 <option value="11">11</option>
+                 <option value="12">12</option>
+                 <option value="13">13</option>
+                 <option value="14">14</option>
+                 <option value="15">15</option>
+                 <option value="16">16</option>
+                 <option value="17">17</option>
+                 <option value="18">18</option>
+                 <option value="19">19</option>
+                 <option value="20">20</option>
+                 <option value="21">21</option>
+                 <option value="22">22</option>
+                 <option value="23">23</option>
+                 <option value="24">24</option>
+                 <option value="25">25</option>
+                 <option value="26">26</option>
+                 <option value="27">27</option>
+                 <option value="28">28</option>
+                 <option value="29">29</option>
+                 <option value="30">30</option>
+               </select>
+           </div>
+
+         </div>
+        <div class = "event_card">
+          <div class = "event_logo">
+            <span>
+              <img src = "logos/texans.png">
+            </span>
+          </div>
+          <div class = "event_teamName">
+            HOU Texans
+          </div>
+          <div class = "event_logo">
+            <span>
+              <img src = "logos/pats.png">
+            </span>
+          </div>
+          <div class = "event_teamName">
+            NE Patriots
+          </div>
+          <div class = "event_dropDown">
+             <select name="gameThree" placeholder="gameThree" id="select2">
+                <option value="null">pick one</option>
+               <option value="=Q1">Texans</option>
+              <option value="=AF1">Patriots</option>
+              </select>
+              <select name="gameThreeScore" placeholder="gameThreeScore" id="select1">
+                <option value="null">Choose Spread</option>
+               <option value="1">1</option>
+              <option value="2">2</option>
+                <option value="3">3</option>
+              <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+              </select>
+          </div>
+
+        </div>
+        <div class = "event_card">
+         <div class = "event_logo">
+           <span>
+             <img src = "logos/rams.png">
+           </span>
+         </div>
+         <div class = "event_teamName">
+           LA Rams
+         </div>
+         <div class = "event_logo">
+           <span>
+             <img src = "logos/bears.png">
+           </span>
+         </div>
+         <div class = "event_teamName">
+           CHI Bears
+         </div>
+         <div class = "event_dropDown">
+            <select name="gameFour" placeholder="gameFour" id="select2">
+               <option value="null">pick one</option>
+              <option value="=V1">Rams</option>
+             <option value="=X1">Bears</option>
+             </select>
+             <select name="gameFourScore" placeholder="gameFourScore" id="select1">
+               <option value="null">Choose Spread</option>
+              <option value="1">1</option>
+             <option value="2">2</option>
+               <option value="3">3</option>
+             <option value="4">4</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7</option>
+               <option value="8">8</option>
+               <option value="9">9</option>
+               <option value="10">10</option>
+               <option value="11">11</option>
+               <option value="12">12</option>
+               <option value="13">13</option>
+               <option value="14">14</option>
+               <option value="15">15</option>
+               <option value="16">16</option>
+               <option value="17">17</option>
+               <option value="18">18</option>
+               <option value="19">19</option>
+               <option value="20">20</option>
+               <option value="21">21</option>
+               <option value="22">22</option>
+               <option value="23">23</option>
+               <option value="24">24</option>
+               <option value="25">25</option>
+               <option value="26">26</option>
+               <option value="27">27</option>
+               <option value="28">28</option>
+               <option value="29">29</option>
+               <option value="30">30</option>
+             </select>
+         </div>
+
+        </div>
+         </div>
+       <div class = "collapsible">Wild Card Round  2026</div><br>
+       <div class = "pickTable">
+         <div class = "event_card">
+           <div class = "event_logo">
+             <span>
+               <img src = "logos/rams.png">
+             </span>
+           </div>
+           <div class = "event_teamName">
+             LA Rams
+           </div>
+           <div class = "event_logo">
+             <span>
+               <img src = "logos/panthers.png">
+             </span>
+           </div>
+           <div class = "event_teamName">
+             CAR Panthers
+           </div>
+            <br>
+           <div class = "event_dropDown">
+              <select name="gameOne" placeholder="gameOne" id="select2">
+                 <option value="null">Select</option>
+                <option value="=V1">Rams</option>
+               <option value="=Z1">Panthers</option>
+               </select>
+               <select name="gameOneScore" placeholder="gameOneScore" id="select1">
+                 <option value="null">Spread</option>
+                <option value="1">1</option>
+               <option value="2">2</option>
+                 <option value="3">3</option>
+               <option value="4">4</option>
+                 <option value="5">5</option>
+                 <option value="6">6</option>
+                 <option value="7">7</option>
+                 <option value="8">8</option>
+                 <option value="9">9</option>
+                 <option value="10">10</option>
+                 <option value="11">11</option>
+                 <option value="12">12</option>
+                 <option value="13">13</option>
+                 <option value="14">14</option>
+                 <option value="15">15</option>
+                 <option value="16">16</option>
+                 <option value="17">17</option>
+                 <option value="18">18</option>
+                 <option value="19">19</option>
+                 <option value="20">20</option>
+                 <option value="21">21</option>
+                 <option value="22">22</option>
+                 <option value="23">23</option>
+                 <option value="24">24</option>
+                 <option value="25">25</option>
+                 <option value="26">26</option>
+                 <option value="27">27</option>
+                 <option value="28">28</option>
+                 <option value="29">29</option>
+                 <option value="30">30</option>
+               </select>
+           </div>
+
+         </div>
+          <div class = "event_card">
+            <div class = "event_logo">
+              <span>
+                <img src = "logos/packers.png">
+              </span>
+            </div>
+            <div class = "event_teamName">
+              GB Packers
+            </div>
+            <div class = "event_logo">
+              <span>
+                <img src = "logos/bears.png">
+              </span>
+            </div>
+            <div class = "event_teamName">
+              CHI Bears
+            </div>
+            <div class = "event_dropDown">
+               <select name="gameTwo" placeholder="gameTwo" id="select2">
+                  <option value="null">pick one</option>
+                 <option value="=AE1">Packers</option>
+                <option value="=X1">Bears</option>
+                </select>
+                <select name="gameTwoScore" placeholder="gameTwoScore" id="select1">
+                  <option value="null">Choose Spread</option>
+                 <option value="1">1</option>
+                <option value="2">2</option>
+                  <option value="3">3</option>
+                <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                </select>
+            </div>
+
+          </div>
+         <div class = "event_card">
+           <div class = "event_logo">
+             <span>
+               <img src = "logos/bills.png">
+             </span>
+           </div>
+           <div class = "event_teamName">
+             BUF Bills
+           </div>
+           <div class = "event_logo">
+             <span>
+               <img src = "logos/jags.png">
+             </span>
+           </div>
+           <div class = "event_teamName">
+             JAX Jaguars
+           </div>
+           <div class = "event_dropDown">
+              <select name="gameThree" placeholder="gameThree" id="select2">
+                 <option value="null">pick one</option>
+                <option value="=S1">Bills</option>
+               <option value="=AD1">Jaguars</option>
+               </select>
+               <select name="gameThreeScore" placeholder="gameThreeScore" id="select1">
+                 <option value="null">Choose Spread</option>
+                <option value="1">1</option>
+               <option value="2">2</option>
+                 <option value="3">3</option>
+               <option value="4">4</option>
+                 <option value="5">5</option>
+                 <option value="6">6</option>
+                 <option value="7">7</option>
+                 <option value="8">8</option>
+                 <option value="9">9</option>
+                 <option value="10">10</option>
+                 <option value="11">11</option>
+                 <option value="12">12</option>
+                 <option value="13">13</option>
+                 <option value="14">14</option>
+                 <option value="15">15</option>
+                 <option value="16">16</option>
+                 <option value="17">17</option>
+                 <option value="18">18</option>
+                 <option value="19">19</option>
+                 <option value="20">20</option>
+                 <option value="21">21</option>
+                 <option value="22">22</option>
+                 <option value="23">23</option>
+                 <option value="24">24</option>
+                 <option value="25">25</option>
+                 <option value="26">26</option>
+                 <option value="27">27</option>
+                 <option value="28">28</option>
+                 <option value="29">29</option>
+                 <option value="30">30</option>
+               </select>
+           </div>
+
+         </div>
+         <div class = "event_card">
+          <div class = "event_logo">
+            <span>
+              <img src = "logos/niners.png"">
+            </span>
+          </div>
+          <div class = "event_teamName">
+            SF 49ers
+          </div>
+          <div class = "event_logo">
+            <span>
+              <img src = "logos/eagles.png">
+            </span>
+          </div>
+          <div class = "event_teamName">
+            PHI Eagles
+          </div>
+          <div class = "event_dropDown">
+             <select name="gameFour" placeholder="gameFour" id="select2">
+                <option value="null">pick one</option>
+               <option value="=AC1">49ers</option>
+              <option value="=T1">Eagles</option>
+              </select>
+              <select name="gameFourScore" placeholder="gameFourScore" id="select1">
+                <option value="null">Choose Spread</option>
+               <option value="1">1</option>
+              <option value="2">2</option>
+                <option value="3">3</option>
+              <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+              </select>
+          </div>
+
+         </div>
+         <div class = "event_card">
+           <div class = "event_logo">
+             <span>
+               <img src = "logos/chargers.png"">
+             </span>
+           </div>
+           <div class = "event_teamName">
+             LA Chargers
+           </div>
+           <div class = "event_logo">
+             <span>
+               <img src = "logos/pats.png">
+             </span>
+           </div>
+           <div class = "event_teamName">
+             NE Patriots
+           </div>
+           <div class = "event_dropDown">
+              <select name="gameFive" placeholder="gameFive" id="select2">
+                 <option value="null">pick one</option>
+                <option value="=AA1">Charger</option>
+               <option value="=AF1">Patriots</option>
+               </select>
+               <select name="gameFiveScore" placeholder="gameFiveScore" id="select1">
+                 <option value="null">Choose Spread</option>
+                <option value="1">1</option>
+               <option value="2">2</option>
+                 <option value="3">3</option>
+               <option value="4">4</option>
+                 <option value="5">5</option>
+                 <option value="6">6</option>
+                 <option value="7">7</option>
+                 <option value="8">8</option>
+                 <option value="9">9</option>
+                 <option value="10">10</option>
+                 <option value="11">11</option>
+                 <option value="12">12</option>
+                 <option value="13">13</option>
+                 <option value="14">14</option>
+                 <option value="15">15</option>
+                 <option value="16">16</option>
+                 <option value="17">17</option>
+                 <option value="18">18</option>
+                 <option value="19">19</option>
+                 <option value="20">20</option>
+                 <option value="21">21</option>
+                 <option value="22">22</option>
+                 <option value="23">23</option>
+                 <option value="24">24</option>
+                 <option value="25">25</option>
+                 <option value="26">26</option>
+                 <option value="27">27</option>
+                 <option value="28">28</option>
+                 <option value="29">29</option>
+                 <option value="30">30</option>
+               </select>
+           </div>
+
+         </div>
+         <div class = "event_card">
+          <div class = "event_logo">
+            <span>
+              <img src = "logos/texans.png"">
+            </span>
+          </div>
+          <div class = "event_teamName">
+            HOU Texans
+          </div>
+          <div class = "event_logo">
+            <span>
+              <img src = "logos/steelers.png">
+            </span>
+          </div>
+          <div class = "event_teamName">
+            PIT Steelers
+          </div>
+          <div class = "event_dropDown">
+             <select name="gameSix" placeholder="gameSix" id="select2">
+                <option value="null">pick one</option>
+               <option value="=Q1">Texans</option>
+              <option value="=AB1">Steelers</option>
+              </select>
+              <select name="gameSixScore" placeholder="gameSixScore" id="select1">
+                <option value="null">Choose Spread</option>
+               <option value="1">1</option>
+              <option value="2">2</option>
+                <option value="3">3</option>
+              <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+              </select>
+          </div>
+
+         </div>
+
+       </div>
+      <div class = "collapsible">Playoffs  2025</div><br>
+        <div class="pickTable">
+       <div class = "collapsible">Superbowl - 2025</div>
+         <div class="pickTable">
+
+           <div class = "event_card">
+             <div class = "event_logo">
+               <span>
+                 <img src = "logos/eagles.png">
+               </span>
+             </div>
+             <div class = "event_teamName">
+               PHI Eagles
+             </div>
+             <div class = "event_logo">
+               <span>
+                 <img src = "logos/chiefs.png">
+               </span>
+             </div>
+             <div class = "event_teamName">
+               KC Chiefs
+             </div>
+             <div class = "event_dropDown">
+                <select name="gameOne" placeholder="gameOne" id="select2">
+                   <option value="null">pick one</option>
+                  <option value="=T1">Eagels</option>
+                 <option value="=X1">Chiefs</option>
+                 </select>
+                 <select name="gameOneScore" placeholder="gameOneScore" id="select1">
+                   <option value="null">Choose Spread</option>
+                  <option value="1">1</option>
+                 <option value="2">2</option>
+                   <option value="3">3</option>
+                 <option value="4">4</option>
+                   <option value="5">5</option>
+                   <option value="6">6</option>
+                   <option value="7">7</option>
+                   <option value="8">8</option>
+                   <option value="9">9</option>
+                   <option value="10">10</option>
+                   <option value="11">11</option>
+                   <option value="12">12</option>
+                   <option value="13">13</option>
+                   <option value="14">14</option>
+                   <option value="15">15</option>
+                   <option value="16">16</option>
+                   <option value="17">17</option>
+                   <option value="18">18</option>
+                   <option value="19">19</option>
+                   <option value="20">20</option>
+                   <option value="21">21</option>
+                   <option value="22">22</option>
+                   <option value="23">23</option>
+                   <option value="24">24</option>
+                   <option value="25">25</option>
+                   <option value="26">26</option>
+                   <option value="27">27</option>
+                   <option value="28">28</option>
+                   <option value="29">29</option>
+                   <option value="30">30</option>
+                 </select>
+             </div>
+
+           </div>
+
+
+           </div>
+        <br>
+        <div class = "collapsible">Conference Championship - 2025</div>
+        <div class="pickTable">
+
+          <div class = "event_card">
+            <div class = "event_logo">
+              <span>
+                <img src = "logos/commanders.png">
+              </span>
+            </div>
+            <div class = "event_teamName">
+              WAS Commanders
+            </div>
+            <div class = "event_logo">
+              <span>
+                <img src = "logos/eagles.png"">
+              </span>
+            </div>
+            <div class = "event_teamName">
+              PHI Eagles
+            </div>
+            <div class = "event_dropDown">
+               <select name="gameOne" placeholder="gameOne" id="select2">
+                  <option value="null">pick one</option>
+                 <option value="=U1">Commanders</option>
+                <option value="=T1">Eagles</option>
+                </select>
+                <select name="gameOneScore" placeholder="gameOneScore" id="select1">
+                  <option value="null">Choose Spread</option>
+                 <option value="1">1</option>
+                <option value="2">2</option>
+                  <option value="3">3</option>
+                <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                </select>
+            </div>
+
+          </div>
+          <div class = "event_card">
+             <div class = "event_logo">
+               <span>
+                 <img src = "logos/bills.png">
+               </span>
+             </div>
+             <div class = "event_teamName">
+               BUF Bills
+             </div>
+             <div class = "event_logo">
+               <span>
+                 <img src = "logos/chiefs.png">
+               </span>
+             </div>
+             <div class = "event_teamName">
+               KC Chiefs
+             </div>
+             <div class = "event_dropDown">
+                <select name="gameTwo" placeholder="gameTwo" id="select2">
+                   <option value="null">pick one</option>
+                  <option value="=S1">Bills</option>
+                 <option value="=X1">Chiefs</option>
+                 </select>
+                 <select name="gameTwoScore" placeholder="gameTwoScore" id="select1">
+                   <option value="null">Choose Spread</option>
+                  <option value="1">1</option>
+                 <option value="2">2</option>
+                   <option value="3">3</option>
+                 <option value="4">4</option>
+                   <option value="5">5</option>
+                   <option value="6">6</option>
+                   <option value="7">7</option>
+                   <option value="8">8</option>
+                   <option value="9">9</option>
+                   <option value="10">10</option>
+                   <option value="11">11</option>
+                   <option value="12">12</option>
+                   <option value="13">13</option>
+                   <option value="14">14</option>
+                   <option value="15">15</option>
+                   <option value="16">16</option>
+                   <option value="17">17</option>
+                   <option value="18">18</option>
+                   <option value="19">19</option>
+                   <option value="20">20</option>
+                   <option value="21">21</option>
+                   <option value="22">22</option>
+                   <option value="23">23</option>
+                   <option value="24">24</option>
+                   <option value="25">25</option>
+                   <option value="26">26</option>
+                   <option value="27">27</option>
+                   <option value="28">28</option>
+                   <option value="29">29</option>
+                   <option value="30">30</option>
+                 </select>
+             </div>
+
+           </div>
+
+          </div>
+        <br>
+        <div class = "collapsible">Divisional Round - 2025</div>
+         <div class="pickTable">
+
+           <div class = "event_card">
+             <div class = "event_logo">
+               <span>
+                 <img src = "logos/texans.png">
+               </span>
+             </div>
+             <div class = "event_teamName">
+               HOU Texans
+             </div>
+             <div class = "event_logo">
+               <span>
+                 <img src = "logos/chiefs.png">
+               </span>
+             </div>
+             <div class = "event_teamName">
+               KC Chiefs
+             </div>
+             <div class = "event_dropDown">
+                <select name="gameOne" placeholder="gameOne" id="select2">
+                   <option value="null">pick one</option>
+                  <option value="=Q1">Texans</option>
+                 <option value="=X1">Chiefs</option>
+                 </select>
+                 <select name="gameOneScore" placeholder="gameOneScore" id="select1">
+                   <option value="null">Choose Spread</option>
+                  <option value="1">1</option>
+                 <option value="2">2</option>
+                   <option value="3">3</option>
+                 <option value="4">4</option>
+                   <option value="5">5</option>
+                   <option value="6">6</option>
+                   <option value="7">7</option>
+                   <option value="8">8</option>
+                   <option value="9">9</option>
+                   <option value="10">10</option>
+                   <option value="11">11</option>
+                   <option value="12">12</option>
+                   <option value="13">13</option>
+                   <option value="14">14</option>
+                   <option value="15">15</option>
+                   <option value="16">16</option>
+                   <option value="17">17</option>
+                   <option value="18">18</option>
+                   <option value="19">19</option>
+                   <option value="20">20</option>
+                   <option value="21">21</option>
+                   <option value="22">22</option>
+                   <option value="23">23</option>
+                   <option value="24">24</option>
+                   <option value="25">25</option>
+                   <option value="26">26</option>
+                   <option value="27">27</option>
+                   <option value="28">28</option>
+                   <option value="29">29</option>
+                   <option value="30">30</option>
+                 </select>
+             </div>
+
+           </div>
+           <div class = "event_card">
+              <div class = "event_logo">
+                <span>
+                  <img src = "logos/commanders.png">
+                </span>
+              </div>
+              <div class = "event_teamName">
+                WAS Commanders
+              </div>
+              <div class = "event_logo">
+                <span>
+                  <img src = "logos/lions.png">
+                </span>
+              </div>
+              <div class = "event_teamName">
+                DET Lions
+              </div>
+              <div class = "event_dropDown">
+                 <select name="gameTwo" placeholder="gameTwo" id="select2">
+                    <option value="null">pick one</option>
+                   <option value="=U1">Commanders</option>
+                  <option value="=W1">Lions</option>
+                  </select>
+                  <select name="gameTwoScore" placeholder="gameTwoScore" id="select1">
+                    <option value="null">Choose Spread</option>
+                   <option value="1">1</option>
+                  <option value="2">2</option>
+                    <option value="3">3</option>
+                  <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                  </select>
+              </div>
+
+            </div>
+           <div class = "event_card">
+             <div class = "event_logo">
+               <span>
+                 <img src = "logos/rams.png">
+               </span>
+             </div>
+             <div class = "event_teamName">
+               LA Rams
+             </div>
+             <div class = "event_logo">
+               <span>
+                 <img src = "logos/eagles.png">
+               </span>
+             </div>
+             <div class = "event_teamName">
+               PHI Eagles
+             </div>
+             <div class = "event_dropDown">
+                <select name="gameThree" placeholder="gameThree" id="select2">
+                   <option value="null">pick one</option>
+                  <option value="=V1">Rams</option>
+                 <option value="=T1">Eagles</option>
+                 </select>
+                 <select name="gameThreeScore" placeholder="gameThreeScore" id="select1">
+                   <option value="null">Choose Spread</option>
+                  <option value="1">1</option>
+                 <option value="2">2</option>
+                   <option value="3">3</option>
+                 <option value="4">4</option>
+                   <option value="5">5</option>
+                   <option value="6">6</option>
+                   <option value="7">7</option>
+                   <option value="8">8</option>
+                   <option value="9">9</option>
+                   <option value="10">10</option>
+                   <option value="11">11</option>
+                   <option value="12">12</option>
+                   <option value="13">13</option>
+                   <option value="14">14</option>
+                   <option value="15">15</option>
+                   <option value="16">16</option>
+                   <option value="17">17</option>
+                   <option value="18">18</option>
+                   <option value="19">19</option>
+                   <option value="20">20</option>
+                   <option value="21">21</option>
+                   <option value="22">22</option>
+                   <option value="23">23</option>
+                   <option value="24">24</option>
+                   <option value="25">25</option>
+                   <option value="26">26</option>
+                   <option value="27">27</option>
+                   <option value="28">28</option>
+                   <option value="29">29</option>
+                   <option value="30">30</option>
+                 </select>
+             </div>
+
+           </div>
+           <div class = "event_card">
+              <div class = "event_logo">
+                <span>
+                  <img src = "logos/Ravens.png">
+                </span>
+              </div>
+              <div class = "event_teamName">
+                BAL Ravens
+              </div>
+              <div class = "event_logo">
+                <span>
+                  <img src = "logos/bills.png">
+                </span>
+              </div>
+              <div class = "event_teamName">
+                BUF Bills
+              </div>
+              <div class = "event_dropDown">
+                 <select name="gameFour" placeholder="gameFour" id="select2">
+                    <option value="null">pick one</option>
+                   <option value="=R1">Ravens</option>
+                  <option value="=S1">Bills</option>
+                  </select>
+                  <select name="gameFourScore" placeholder="gameFourScore" id="select1">
+                    <option value="null">Choose Spread</option>
+                   <option value="1">1</option>
+                  <option value="2">2</option>
+                    <option value="3">3</option>
+                  <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                  </select>
+              </div>
+
+            </div>
+
+
+           </div>
+        <br>
+        <div class = "collapsible">Wild Card Round - 2025</div>
+        <div class="pickTable">
+
+          <div class = "event_card">
+            <div class = "event_logo">
+              <span>
+                <img src = "logos/chargers.png">
+              </span>
+            </div>
+            <div class = "event_teamName">
+              LA Chargers
+            </div>
+            <div class = "event_logo">
+              <span>
+                <img src = "logos/texans.png">
+              </span>
+            </div>
+            <div class = "event_teamName">
+              HOU Texans
+            </div>
+            <div class = "event_dropDown">
+               <select name="gameOne" placeholder="gameOne" id="select2">
+                  <option value="null">pick one</option>
+                 <option value="Chargers">Chargers</option>
+                <option value="Texans">Texans</option>
+                </select>
+                <select name="gameOneScore" placeholder="gameOneScore" id="select1">
+                  <option value="null">Choose Spread</option>
+                 <option value="1">1</option>
+                <option value="2">2</option>
+                  <option value="3">3</option>
+                <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                </select>
+            </div>
+
+          </div>
+          <div class = "event_card">
+             <div class = "event_logo">
+               <span>
+                 <img src = "logos/steelers.png">
+               </span>
+             </div>
+             <div class = "event_teamName">
+               PIT Steelers
+             </div>
+             <div class = "event_logo">
+               <span>
+                 <img src = "logos/Ravens.png">
+               </span>
+             </div>
+             <div class = "event_teamName">
+               BAL Ravens
+             </div>
+             <div class = "event_dropDown">
+                <select name="gameTwo" placeholder="gameTwo" id="select2">
+                   <option value="null">pick one</option>
+                  <option value="Steeler">Steelers</option>
+                 <option value="Ravens">Ravens</option>
+                 </select>
+                 <select name="gameTwoScore" placeholder="gameTwoScore" id="select1">
+                   <option value="null">Choose Spread</option>
+                  <option value="1">1</option>
+                 <option value="2">2</option>
+                   <option value="3">3</option>
+                 <option value="4">4</option>
+                   <option value="5">5</option>
+                   <option value="6">6</option>
+                   <option value="7">7</option>
+                   <option value="8">8</option>
+                   <option value="9">9</option>
+                   <option value="10">10</option>
+                   <option value="11">11</option>
+                   <option value="12">12</option>
+                   <option value="13">13</option>
+                   <option value="14">14</option>
+                   <option value="15">15</option>
+                   <option value="16">16</option>
+                   <option value="17">17</option>
+                   <option value="18">18</option>
+                   <option value="19">19</option>
+                   <option value="20">20</option>
+                   <option value="21">21</option>
+                   <option value="22">22</option>
+                   <option value="23">23</option>
+                   <option value="24">24</option>
+                   <option value="25">25</option>
+                   <option value="26">26</option>
+                   <option value="27">27</option>
+                   <option value="28">28</option>
+                   <option value="29">29</option>
+                   <option value="30">30</option>
+                 </select>
+             </div>
+
+           </div>
+          <div class = "event_card">
+            <div class = "event_logo">
+              <span>
+                <img src = "logos/broncos.png">
+              </span>
+            </div>
+            <div class = "event_teamName">
+              DEN Broncos
+            </div>
+            <div class = "event_logo">
+              <span>
+                <img src = "logos/bills.png">
+              </span>
+            </div>
+            <div class = "event_teamName">
+              BUF Bills
+            </div>
+            <div class = "event_dropDown">
+               <select name="gameThree" placeholder="gameThree" id="select2">
+                  <option value="null">pick one</option>
+                 <option value="Broncos">Broncos</option>
+                <option value="Bills">Bills</option>
+                </select>
+                <select name="gameThreeScore" placeholder="gameThreeScore" id="select1">
+                  <option value="null">Choose Spread</option>
+                 <option value="1">1</option>
+                <option value="2">2</option>
+                  <option value="3">3</option>
+                <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                </select>
+            </div>
+
+          </div>
+          <div class = "event_card">
+             <div class = "event_logo">
+               <span>
+                 <img src = "logos/packers.png">
+               </span>
+             </div>
+             <div class = "event_teamName">
+               GB Packers
+             </div>
+             <div class = "event_logo">
+               <span>
+                 <img src = "logos/eagles.png">
+               </span>
+             </div>
+             <div class = "event_teamName">
+               PHI Eagles
+             </div>
+             <div class = "event_dropDown">
+                <select name="gameFour" placeholder="gameFour" id="select2">
+                   <option value="null">pick one</option>
+                  <option value="Packers">Packers</option>
+                 <option value="Eagles">Eagels</option>
+                 </select>
+                 <select name="gameFourScore" placeholder="gameFourScore" id="select1">
+                   <option value="null">Choose Spread</option>
+                  <option value="1">1</option>
+                 <option value="2">2</option>
+                   <option value="3">3</option>
+                 <option value="4">4</option>
+                   <option value="5">5</option>
+                   <option value="6">6</option>
+                   <option value="7">7</option>
+                   <option value="8">8</option>
+                   <option value="9">9</option>
+                   <option value="10">10</option>
+                   <option value="11">11</option>
+                   <option value="12">12</option>
+                   <option value="13">13</option>
+                   <option value="14">14</option>
+                   <option value="15">15</option>
+                   <option value="16">16</option>
+                   <option value="17">17</option>
+                   <option value="18">18</option>
+                   <option value="19">19</option>
+                   <option value="20">20</option>
+                   <option value="21">21</option>
+                   <option value="22">22</option>
+                   <option value="23">23</option>
+                   <option value="24">24</option>
+                   <option value="25">25</option>
+                   <option value="26">26</option>
+                   <option value="27">27</option>
+                   <option value="28">28</option>
+                   <option value="29">29</option>
+                   <option value="30">30</option>
+                 </select>
+             </div>
+
+           </div>
+          <div class = "event_card">
+            <div class = "event_logo">
+              <span>
+                <img src = "logos/commanders.png">
+              </span>
+            </div>
+            <div class = "event_teamName">
+              WAS Commanders
+            </div>
+            <div class = "event_logo">
+              <span>
+                <img src = "logos/bucs.png">
+              </span>
+            </div>
+            <div class = "event_teamName">
+              TB Buccaneers
+            </div>
+            <div class = "event_dropDown">
+               <select name="gameFive" placeholder="gameFive" id="select2">
+                  <option value="null">pick one</option>
+                 <option value="Commanders">Commanders</option>
+                <option value="Buccaneers">Buccaneers</option>
+                </select>
+                <select name="gameFiveScore" placeholder="gameFiveScore" id="select1">
+                  <option value="null">Choose Spread</option>
+                 <option value="1">1</option>
+                <option value="2">2</option>
+                  <option value="3">3</option>
+                <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                </select>
+            </div>
+
+          </div>
+          <div class = "event_card">
+             <div class = "event_logo">
+               <span>
+                 <img src = "logos/vikings.png">
+               </span>
+             </div>
+             <div class = "event_teamName">
+               MIN Vikings
+             </div>
+             <div class = "event_logo">
+               <span>
+                 <img src = "logos/rams.png">
+               </span>
+             </div>
+             <div class = "event_teamName">
+               LA Rams
+             </div>
+             <div class = "event_dropDown">
+                <select name="gameSix" placeholder="gameSix" id="select2">
+                   <option value="null">pick one</option>
+                  <option value="Vikings">Vikings</option>
+                 <option value="Rams">Rams</option>
+                 </select>
+                 <select name="gameSixScore" placeholder="gameSixScore" id="select1">
+                   <option value="null">Choose Spread</option>
+                  <option value="1">1</option>
+                 <option value="2">2</option>
+                   <option value="3">3</option>
+                 <option value="4">4</option>
+                   <option value="5">5</option>
+                   <option value="6">6</option>
+                   <option value="7">7</option>
+                   <option value="8">8</option>
+                   <option value="9">9</option>
+                   <option value="10">10</option>
+                   <option value="11">11</option>
+                   <option value="12">12</option>
+                   <option value="13">13</option>
+                   <option value="14">14</option>
+                   <option value="15">15</option>
+                   <option value="16">16</option>
+                   <option value="17">17</option>
+                   <option value="18">18</option>
+                   <option value="19">19</option>
+                   <option value="20">20</option>
+                   <option value="21">21</option>
+                   <option value="22">22</option>
+                   <option value="23">23</option>
+                   <option value="24">24</option>
+                   <option value="25">25</option>
+                   <option value="26">26</option>
+                   <option value="27">27</option>
+                   <option value="28">28</option>
+                   <option value="29">29</option>
+                   <option value="30">30</option>
+                 </select>
+             </div>
+
+           </div>
+
+          </div>
+          </div>
+        <br><br>
+       <div class = "collapsible">Playoffs  2024</div>
+       <div class = "pickTable">
+       
+        
+       <div class = "collapsible">Playoffs Round 4 - 2024</div>
+        <div class="pickTable">
+
+          <div class = "event_card">
+            <div class = "event_logo">
+              <span>
+                <img src = "logos/chiefs.png">
+              </span>
+            </div>
+            <div class = "event_teamName">
+              KC Chiefs
+            </div>
+            <div class = "event_logo">
+              <span>
+                <img src = "logos/niners.png">
+              </span>
+            </div>
+            <div class = "event_teamName">
+              SF 49ers
+            </div>
+            <div class = "event_dropDown">
+               <select name="gameOne" placeholder="gameOne" id="select2">
+                  <option value="test">pick one</option>
+                 <option value="Chiefs">Chiefs</option>
+                <option value="49ers">49ers</option>
+                </select>
+                <select name="gameOneScore" placeholder="gameOneScore" id="select1">
+                  <option value="null">Choose Spread</option>
+                 <option value="1">1</option>
+                <option value="2">2</option>
+                  <option value="3">3</option>
+                <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                </select>
+            </div>
+          </div>
+         
+          </div>
+        <br><br>
+       <div class = "collapsible">Playoffs Round 3 - 2024</div>
+         <div class="pickTable">
+
+           <div class = "event_card">
+             <div class = "event_logo">
+               <span>
+                 <img src = "logos/chiefs.png">
+               </span>
+             </div>
+             <div class = "event_teamName">
+               KC Chiefs
+             </div>
+             <div class = "event_logo">
+               <span>
+                 <img src = "logos/Ravens.png">
+               </span>
+             </div>
+             <div class = "event_teamName">
+               BAL Ravens
+             </div>
+          
+           </div>
+           <div class = "event_card">
+              <div class = "event_logo">
+                <span>
+                  <img src = "logos/lions.png">
+                </span>
+              </div>
+              <div class = "event_teamName">
+                DET Lions
+              </div>
+              <div class = "event_logo">
+                <span>
+                  <img src = "logos/niners.png">
+                </span>
+              </div>
+              <div class = "event_teamName">
+                SF 49ers
+              </div>
+             
+            </div>
+                </div>
+         <br><br>
+       <div class = "collapsible">Playoffs Round 2 - 2024</div>
+        <div class="pickTable">
+
+          <div class = "event_card">
+            <div class = "event_logo">
+              <span>
+                <img src = "logos/texans.png">
+              </span>
+            </div>
+            <div class = "event_teamName">
+              HOU Texans
+            </div>
+            <div class = "event_logo">
+              <span>
+                <img src = "logos/Ravens.png">
+              </span>
+            </div>
+            <div class = "event_teamName">
+              BAL Ravens
+            </div>
+           
+          </div>
+          <div class = "event_card">
+             <div class = "event_logo">
+               <span>
+                 <img src = "logos/packers.png">
+               </span>
+             </div>
+             <div class = "event_teamName">
+               GB Packers
+             </div>
+             <div class = "event_logo">
+               <span>
+                 <img src = "logos/niners.png">
+               </span>
+             </div>
+             <div class = "event_teamName">
+               SF 49ers
+             </div>
+           
+           </div>
+          <div class = "event_card">
+            <div class = "event_logo">
+              <span>
+                <img src = "logos/bucs.png">
+              </span>
+            </div>
+            <div class = "event_teamName">
+              TB Buccaneers
+            </div>
+            <div class = "event_logo">
+              <span>
+                <img src = "logos/lions.png">
+              </span>
+            </div>
+            <div class = "event_teamName">
+              DET Lions
+            </div>
+         
+          </div>
+          <div class = "event_card">
+            <div class = "event_logo">
+              <span>
+                <img src = "logos/chiefs.png">
+              </span>
+            </div>
+            <div class = "event_teamName">
+              KC Chiefs
+            </div>
+            <div class = "event_logo">
+              <span>
+                <img src = "logos/bills.png">
+              </span>
+            </div>
+            <div class = "event_teamName">
+              BUF Bills
+            </div>
+          
+          </div>
+        
+     
+       </div>
+        <br><br>
+       <div class = "collapsible">Playoffs Round 1 - 2024</div>
+       <div class="pickTable">
+
+         <div class = "event_card">
+           <div class = "event_logo">
+             <span>
+               <img src = "logos/browns.png">
+             </span>
+           </div>
+           <div class = "event_teamName">
+             CLE Browns
+           </div>
+           <div class = "event_logo">
+             <span>
+               <img src = "logos/texans.png">
+             </span>
+           </div>
+           <div class = "event_teamName">
+             HOU Texans
+           </div>
+     
+         </div>
+         <div class = "event_card">
+            <div class = "event_logo">
+              <span>
+                <img src = "logos/dolphins.png">
+              </span>
+            </div>
+            <div class = "event_teamName">
+              MIA Dolphins
+            </div>
+            <div class = "event_logo">
+              <span>
+                <img src = "logos/chiefs.png">
+              </span>
+            </div>
+            <div class = "event_teamName">
+              KC Chiefs
+            </div>
+         
+          </div>
+         <div class = "event_card">
+           <div class = "event_logo">
+             <span>
+               <img src = "logos/steelers.png">
+             </span>
+           </div>
+           <div class = "event_teamName">
+             PIT Steelers
+           </div>
+           <div class = "event_logo">
+             <span>
+               <img src = "logos/bills.png">
+             </span>
+           </div>
+           <div class = "event_teamName">
+             BUF Bills
+           </div>
+        
+         </div>
+         <div class = "event_card">
+           <div class = "event_logo">
+             <span>
+               <img src = "logos/packers.png">
+             </span>
+           </div>
+           <div class = "event_teamName">
+             GB Packers
+           </div>
+           <div class = "event_logo">
+             <span>
+               <img src = "logos/cowboys.png">
+             </span>
+           </div>
+           <div class = "event_teamName">
+             DAL Cowboys
+           </div>
+          
+         </div>
+         <div class = "event_card">
+           <div class = "event_logo">
+             <span>
+               <img src = "logos/rams.png">
+             </span>
+           </div>
+           <div class = "event_teamName">
+             LA Rams
+           </div>
+           <div class = "event_logo">
+             <span>
+               <img src = "logos/lions.png">
+             </span>
+           </div>
+           <div class = "event_teamName">
+             DET Lions
+           </div>
+         
+         </div>
+         <div class = "event_card">
+           <div class = "event_logo">
+             <span>
+               <img src = "logos/eagles.png">
+             </span>
+           </div>
+           <div class = "event_teamName">
+             PHI Eagles
+           </div>
+           <div class = "event_logo">
+             <span>
+               <img src = "logos/bucs.png">
+             </span>
+           </div>
+           <div class = "event_teamName">
+             TB Bucs
+           </div>
+       
+         </div>
+      </div>
+       <br><br>
+          </div>
+    <br>
+     <div class = "collapsible">Super Bowl 2023</div>
+    <div class="pickTable">
+      
+      <div class = "event_card">
+        <div class = "event_logo">
+          <span>
+            <img src = "logos/eagles.png">
+          </span>
+        </div>
+        <div class = "event_teamName">
+          PHI Eagles
+        </div>
+        <div class = "event_logo">
+          <span>
+            <img src = "logos/chiefs.png">
+          </span>
+        </div>
+        <div class = "event_teamName">
+          KC Chiefs
+        </div>
+   
+      </div>
+      
+     
+       </div>
+     
+   
+  </form>
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="submitToGoogle.js"></script>
+  <script src="script.js"></script>
+
+ 
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <p>Est 2021</p>
+  <title>Bough</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="getForm()">
+
+
+  <div class="menu-icon-wrapper">
+    <div class="menu-icon" onclick="toggleCssMenu(this)">
+      <div class="three-line">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <div id="cssmenu">
+    <ul>
+      <li><a href="SBPropBetsExt.html">Prop Bets</a></li>
+      <li><a href="rules.html">Rules</a></li>
+      <li><a href="pastWinner.html">Past Winners</a></li>
+      <li><a href="standings.html">Standings</a></li>
+      <li><a href="makePicks.html">Submit Picks</a></li>
+      <li><a href="seeEveryonesPicks.html">See the Picks</a></li>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  </div>
+
+  <div id="myHeader">
+    Super Bowl Prop Picks
+  </div>
+
+  <div class="event_card">
+    <div class="event_teamName">
+      Enter Your Name:   
+      <input type="text" id="theirName">
+    </div>
+  </div>
+
+  <div class="pickTable">
+    <div class="event_card">
+       <div class="event_teamName">
+        Length of time it will take Stapleton to sing the anthem(2mins)?
+      </div>
+      <div class="event_teamName">
+          Over
+      </div>
+      <div class="event_teamName">
+          Under
+      </div>
+      <div class="event_dropDown">
+        <select name="gameOne" placeholder="gameOne" id="anthem">
+          <option value="null">pick one</option>
+          <option value="over">Over</option>
+          <option value="under">Under</option>
+        </select>
+      </div>
+    </div>
+     <div class="event_card">
+       <div class="event_teamName">
+        Length of the word Brave in anthem(5.5 seconds)?
+      </div>
+      <div class="event_teamName">
+          Over
+      </div>
+      <div class="event_teamName">
+          Under
+      </div>
+      <div class="event_dropDown">
+        <select name="gameOne" placeholder="gameOne" id="brave">
+          <option value="null">pick one</option>
+          <option value="over">Over</option>
+          <option value="under">Under</option>
+        </select>
+      </div>
+    </div>
+    <div class="event_card">
+       <div class="event_teamName">
+        Who will win the coin toss?
+      </div>
+      <div class="event_logo">
+        <span>
+          <img src="logos/eagles.png">
+        </span>
+      </div>
+      <div class="event_logo">
+        <span>
+          <img src="logos/chiefs.png">
+        </span>
+      </div>
+      <div class="event_dropDown">
+        <select name="gameOne" placeholder="gameOne" id="select">
+          <option value="null">pick one</option>
+          <option value="Eagles">Eagles</option>
+          <option value="Chiefs">Chiefs</option>
+        </select>
+      </div>
+    </div>
+    <div class="event_card">
+      <div class="event_button">
+        <button type="submit" onclick="sbProps()">Dont't press this yet</button>
+      </div>
+    </div>
+  </div>
+   
+  <div  class = "pickTable">
+    <div class = "event_card">
+     <table id = "myTable">
+        <tbody>
+          <tr id="row1"><td>Name</td><td>Anthem</td><td>Coin Toss</td></tr>
+        </tbody>
+     </table>
+    </div>  
+  </div>
+  
+  
+
+
+
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>

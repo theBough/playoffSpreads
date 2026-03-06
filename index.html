@@ -1,0 +1,13 @@
+<h2>Password Required</h2>
+<input type="password" id="p">
+<button onclick="check()">Enter</button>
+
+<script>
+function check() {
+  if (document.getElementById("p").value === "goreivers") {
+    window.location = "home.html";
+  } else {
+    alert("Wrong password");
+  }
+}
+</script>
